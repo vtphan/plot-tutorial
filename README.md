@@ -27,3 +27,11 @@ Inside the interpreter, load the library ggplot2:
 ```
    > library(ggplot2)
 ```
+
+## Load the data
+
+We will use dataset iris stored in examples/iris.csv. Load the dataset and take a look at its columns.
+```
+   > data = read.table("examples/iris", header=T, sep=",")
+   > head(data)
+```
