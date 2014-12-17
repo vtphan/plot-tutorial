@@ -82,7 +82,7 @@ These two variables are quantitative.  First, look at the scatter plot.
 Many points overlap, and hence, this is not very useful.
 
 
-It is better to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data.
+It is better to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data. (In other words, 4, 6, 8 are categories of cylinders not numerical/quantitative values.)
 ```
 > ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_bar(stat="identity")
 ```
