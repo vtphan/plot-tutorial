@@ -81,14 +81,13 @@ These two variables are quantitative.  First, look at the scatter plot.
 
 Many points overlap, and hence, this is not very useful.
 
-
-It is better to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data. (In other words, 4, 6, 8 are categories of cylinders not numerical/quantitative values.)
+It is more informative to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data. (In other words, 4, 6, 8 are categories of cylinders not numerical/quantitative values.)
 ```
 > ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_bar(stat="identity")
 ```
 <img src="examples/out5.png" width=70% height=70%/>
 
-It can be even more useful to look at the distributions
+The boxplot (showing the quartiles of the data distribution) shows that (i) the distribution of mpg of 4 cylinder cars spreads out quite uniformly, (ii) the distribution of mpg of 8 cylinder cars is more concentrated.  It can be even more useful to look at the distributions
 ```
 > ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_violin()
 ```
