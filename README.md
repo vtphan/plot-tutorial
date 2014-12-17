@@ -66,3 +66,5 @@ Compare 5-point statistics of Petal.Width (quantitative variable, y-axis) across
 ```
 > ggplot(data, aes(x=Species, y=Petal.Width)) + geom_boxplot()
 ```
+
+<img src="examples/out3.png" width=70% height=70%/>
