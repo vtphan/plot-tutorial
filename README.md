@@ -50,7 +50,7 @@ Use a scatter plot to compare two quantitative variables, whose names are the ap
    > ggplot(data, aes(x=Petal.Width, y=Petal.Length)) + geom_point()
 ```
 
-![](examples/out1.png)
+<img src="examples/out1.png" width=80% height=80%/>
 
 We can separate the points into groups defined by variable "Species".
 ```
