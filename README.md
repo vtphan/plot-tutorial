@@ -68,3 +68,27 @@ Compare 5-point statistics of Petal.Width (quantitative variable, y-axis) across
 ```
 
 <img src="examples/out3.png" width=70% height=70%/>
+
+## Further analysis of distribution
+
+Here we look at the dataset examples/mtcars, which has information about mileage (column/variable "mpg") of cars with different cylinders (column/variable "cyl").
+
+These two variables are quantitative.  First, look at the scatter plot.
+```
+> ggplot(mtcars, aes(x=cyl, y=mpg)) + geom_point()
+```
+<img src="examples/out4.png" width=70% height=70%/>
+Many points overlap, and hence, this is not very useful.
+
+
+It is better to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data.
+```
+> ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_bar(stat="identity")
+```
+<img src="examples/out5.png" width=70% height=70%/>
+
+It can be even more useful to look at the distributions
+```
+> ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_violin()
+```
+<img src="examples/out6.png" width=70% height=70%/>
