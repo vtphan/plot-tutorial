@@ -20,20 +20,20 @@ A basic plot consists of two dimensions: x and y.  Typically, x describes a free
 
 Start by running the R interpreter at the command line:
 ```
-   $ R
+$ R
 ```
 
 Inside the interpreter, load the library ggplot2:
 ```
-   > library(ggplot2)
+> library(ggplot2)
 ```
 
 ## Load the data
 
 We will use dataset iris stored in examples/iris.csv. Load the dataset and take a look at its columns with the function "head".
 ```
-   > data = read.table("examples/iris.csv", header=T, sep=",")
-   > head(data)
+> data = read.table("examples/iris.csv", header=T, sep=",")
+> head(data)
   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1          5.1         3.5          1.4         0.2  setosa
 2          4.9         3.0          1.4         0.2  setosa
@@ -47,17 +47,22 @@ We will use dataset iris stored in examples/iris.csv. Load the dataset and take 
 
 Use a scatter plot to compare two quantitative variables, whose names are the appropriate column names.
 ```
-   > ggplot(data, aes(x=Petal.Width, y=Petal.Length)) + geom_point()
+> ggplot(data, aes(x=Petal.Width, y=Petal.Length)) + geom_point()
 ```
 
 <img src="examples/out1.png" width=70% height=70%/>
 
 We can separate the points into groups defined by variable "Species".
 ```
-   > ggplot(data, aes(x=Petal.Width, y=Petal.Length, color=Species)) + geom_point()
+> ggplot(data, aes(x=Petal.Width, y=Petal.Length, color=Species)) + geom_point()
 ```
 
 <img src="examples/out2.png" width=70% height=70%/>
 
 ## Plot qualitative versus quantitative data
 
+Compare 5-point statistics of Petal.Width (quantitative variable, y-axis) across Species (qualitative variable, x-axis).
+
+```
+> ggplot(data, aes(x=Species, y=Petal.Width)) + geom_boxplot()
+```
