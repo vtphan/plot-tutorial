@@ -78,6 +78,7 @@ These two variables are quantitative.  First, look at the scatter plot.
 > ggplot(mtcars, aes(x=cyl, y=mpg)) + geom_point()
 ```
 <img src="examples/out4.png" width=70% height=70%/>
+
 Many points overlap, and hence, this is not very useful.
 
 
