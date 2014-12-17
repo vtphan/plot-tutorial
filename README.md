@@ -8,7 +8,7 @@ This tutorial provides basic examples of how to do basic data analysis using R/g
 - ggplot2
 - reshape2 (recommended)
 
-## Understanding data types
+## Basic concepts
 
 Each data set should be stored in columns separated by tabs or commas.  There should be a header, providing the name of each column.
 
@@ -42,3 +42,22 @@ We will use dataset iris stored in examples/iris.csv. Load the dataset and take 
 5          5.0         3.6          1.4         0.2  setosa
 6          5.4         3.9          1.7         0.4  setosa
 ```
+
+## Plot quantitive versus quantitative data
+
+Use a scatter plot to compare two quantitative variables, whose names are the appropriate column names.
+```
+   > ggplot(data, aes(x=Petal.Width, y=Petal.Length)) + geom_point()
+```
+
+![](examples/out1.png)
+
+We can separate the points into groups defined by variable "Species".
+```
+   > ggplot(data, aes(x=Petal.Width, y=Petal.Length, color=Species)) + geom_point()
+```
+
+![](examples/out2.png)
+
+## Plot qualitative versus quantitative data
+
