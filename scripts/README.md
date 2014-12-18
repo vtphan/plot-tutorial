@@ -4,9 +4,9 @@ qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative
 - R
 - ggplot2
 
-## Scripts
+## Quantitative versus Quantitative
 
-1. qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
+qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 Usage:
 ```
@@ -32,7 +32,9 @@ Categorized further by species.  In this case, two plots are produced: (i) group
 <img src="images/iris-wl1.png" width=70% height=70% />
 <img src="images/iris-wl2.png" width=70% height=70% />
 
-2. cq.R - plot categorical (x) versus quantitative (y) data.
+## Categorical versus Quantitative
+
+cq.R - plot categorical (x) versus quantitative (y) data.
 
 Usage:
 ```
