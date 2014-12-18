@@ -1,5 +1,5 @@
 
-+ qq.R - simple script to plot quantitative-quantitative plots, i.e. scatter plots.
+1. qq.R - simple script to plot quantitative-quantitative plots, i.e. scatter plots.
 
 Usage:
 ```
