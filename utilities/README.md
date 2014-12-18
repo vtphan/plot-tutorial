@@ -1,6 +1,6 @@
 qq.R, cq.R and density.R help facilitate quick analyses of data.
 
--  qq.R helps explore [quantitative vs quantiative relationships](#qq).
+-  qq.R helps explore [quantitative vs quantiative relationships](#user-content-qq).
 ```
      qq.R data.csv x y [z]
 ```
