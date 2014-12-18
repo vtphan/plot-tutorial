@@ -7,11 +7,11 @@ qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative
 - ggplot2
 
 #### Configuration
-- make $HOME/bin
+- Command prompt: make $HOME/bin
 - Download qq.R, cq.R to $HOME/bin
-- chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
-- Set in your $HOME/.bashrc: PATH=$PATH:$HOME/bin
-- source $HOME/.bashrc
+- Command prompt: chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
+- In $HOME/.bashrc: PATH=$PATH:$HOME/bin
+- Command prompt: source $HOME/.bashrc
 
 
 ## Quantitative versus Quantitative
