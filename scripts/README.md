@@ -4,7 +4,7 @@ qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative
 - R
 - ggplot2
 
-Tips: (1) create and place qq.R, cq.R in $HOME/bin,  (2) add $HOME/bin to your PATH it in $HOME/.bashrc.
+Tips: Create, place qq.R, cq.R in $HOME/bin, and add it to your PATH in $HOME/.bashrc.
 
 Now you can use these scripts in any directory:
 ```
