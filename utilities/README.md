@@ -4,11 +4,11 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
 ```
      qq.R data.csv x y [z]
 ```
--  qc.R helps explore categorical vs quantiative relationships.
+-  qc.R helps explore [categorical vs quantiative relationships](#user-content-cq).
 ```
      cq.R data.csv x y [z]
 ```
--  density.R helps compare distributions.
+-  density.R helps [compare distributions](#user-content-density).
 ```
      density.R data.csv x [c]
 ```
@@ -55,7 +55,7 @@ Categorized further by species.  In this case, two plots are produced: (i) group
 <img src="images/iris-wl1.png" width=70% height=70% />
 <img src="images/iris-wl2.png" width=70% height=70% />
 
-## Categorical versus Quantitative
+### <a name="cq"></a> Exploring categorical versus quantitative relationships
 
 cq.R - plot categorical (x) versus quantitative (y) data.
 
@@ -91,7 +91,7 @@ Show the same plots for different values of "carb":
 
 
 
-## Analyzing densities and distributions
+### <a name="density"> Comparing densities and distributions
 
 #### Usage
 ```
