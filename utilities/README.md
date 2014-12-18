@@ -1,47 +1,23 @@
 qq.R, cq.R and density.R help facilitate quick analyses of data.
 
--  qq.R helps explore [quantitative vs quantiative relationships](#user-content-qq).
+-  qq.R helps explore quantitative vs quantiative relationships.
 ```
      qq.R data.csv x y [c]
 ```
--  qc.R helps explore [categorical vs quantiative relationships](#user-content-cq).
+-  qc.R helps explore categorical vs quantiative relationships.
 ```
      cq.R data.csv x y [c]
 ```
--  density.R helps [compare distributions](#user-content-density).
+-  density.R helps compare distributions.
 ```
      density.R data.csv x [c]
 ```
 
-### [Installation and Configurations](Installation.md)
+### [1. Installation and Configurations](../docs/Installation.md)
+### [2. Exploring qq relationships](../docs/#user-content-qq)
+### [3. Exploring cq relationships](../docs/#user-content-cq)
+### [4. Comparing distributions](../docs/#user-content-density)
 
-### <a name="qq"></a>Exploring Quantitative vs Quantitative Relationships
-
-qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
-
-#### Usage
-```
- qq.R data.csv x y [z]
-```
-
-- data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : column name of quantitative variable x.
-- y : column name of quantitative variable y.
-- c : [Optional] column name of category to group data points.
-
-#### Examples
-```
-  qq.R ../examples/iris.csv Petal.Width Petal.Length
-```
-<img src="images/iris-wl.png" width=70% height=70% />
-
-Categorized further by species.  In this case, two plots are produced: (i) groups are plotted together in one plot, (ii) groups are separated into different plots.
-
-```
-  qq.R ../examples/iris.csv Petal.Width Petal.Length Species
-```
-<img src="images/iris-wl1.png" width=70% height=70% />
-<img src="images/iris-wl2.png" width=70% height=70% />
 
 ### <a name="cq"></a> Exploring categorical versus quantitative relationships
 
