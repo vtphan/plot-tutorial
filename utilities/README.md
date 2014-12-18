@@ -13,11 +13,7 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
      density.R data.csv x [c]
 ```
 
-#### [Installation and Configurations](Installation.md)
-#### [Exploring qq relationships](#user-content-qq)
-#### [Exploring cq relationships](#user-content-cq)
-#### [Comparing distributions](#user-content-density)
-
+### [Installation and Configurations](Installation.md)
 
 ### <a name="qq"></a>Exploring Quantitative vs Quantitative Relationships
 
