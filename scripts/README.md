@@ -18,7 +18,7 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 #### Usage
 ```
- Rscript qq.R data_file x y [z]
+ qq.R data_file x y [z]
 ```
 
 - data_file : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
@@ -28,14 +28,14 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 #### Examples
 ```
-  Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length
+  qq.R ../examples/iris.csv Petal.Width Petal.Length
 ```
 <img src="images/iris-wl.png" width=70% height=70% />
 
 Categorized further by species.  In this case, two plots are produced: (i) groups are plotted together in one plot, (ii) groups are separated into different plots.
 
 ```
-  Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length Species
+  qq.R ../examples/iris.csv Petal.Width Petal.Length Species
 ```
 <img src="images/iris-wl1.png" width=70% height=70% />
 <img src="images/iris-wl2.png" width=70% height=70% />
@@ -46,7 +46,7 @@ cq.R - plot categorical (x) versus quantitative (y) data.
 
 #### Usage
 ```
- Rscript cq.R data_file x y [g]
+ cq.R data_file x y [g]
 ```
 
 - data_file : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
@@ -58,7 +58,7 @@ The output consists of 3 plots: (i) a bar chart that sums up quantitative values
 
 #### Examples
 ```
- Rscript cq.R ../examples/mtcars.csv cyl disp
+ cq.R ../examples/mtcars.csv cyl disp
 ```
 <img src="images/cyl-disp1.png" width=70% height=70%/>
 <img src="images/cyl-disp2.png" width=70% height=70%/>
@@ -67,7 +67,7 @@ The output consists of 3 plots: (i) a bar chart that sums up quantitative values
 
 Show the same plots for different values of "carb":
 ```
- Rscript cq.R ../examples/mtcars.csv cyl disp carb
+ cq.R ../examples/mtcars.csv cyl disp carb
 ```
 <img src="images/cyl-disp-carb1.png" width=70% height=70%/>
 <img src="images/cyl-disp-carb2.png" width=70% height=70%/>
