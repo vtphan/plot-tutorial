@@ -30,6 +30,16 @@ Other examples:
 
 2. cq.R - plot categorical (x) versus quantitative (y) data.  The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
+Usage:
+```
+ Rscript cq.R data_file x y [g]
+```
+
+- data_file : comma-separated or tab-separated file, with a header and column names.  The data must be in long-form.
+- x : the name of column in data_file representing the x-variable.
+- y : the name of column in data_file representing the y-variable.
+- g : Optional. The name of column in data_file spreaded into different groups (plots).
+
 Examples:
 ```
  Rscript cq.R ../examples/mtcars.csv cyl disp
@@ -39,6 +49,7 @@ Examples:
 <img src="images/cyl-disp3.png" width=70% height=70%/>
 
 
+Show the same plots for different values of "carb":
 ```
  Rscript cq.R ../examples/mtcars.csv cyl disp carb
 ```
