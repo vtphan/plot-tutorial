@@ -14,19 +14,9 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
 ```
 
 #### [Installation and Configurations](Installation.md)
-
-## Installation
-
-#### Dependencies
-- R
-- ggplot2
-
-#### Configuration
-- At command prompt: make $HOME/bin
-- Move R scripts into $HOME/bin
-- At command prompt: chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
-- In $HOME/.bashrc: PATH=$PATH:$HOME/bin
-- At command prompt: source $HOME/.bashrc
+#### [Exploring qq relationships](#user-content-qq)
+#### [Exploring cq relationships](#user-content-cq)
+#### [Comparing distributions](#user-content-density)
 
 
 ### <a name="qq"></a>Exploring Quantitative vs Quantitative Relationships
