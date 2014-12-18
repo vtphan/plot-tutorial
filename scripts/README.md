@@ -7,11 +7,11 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.  They provide p
 - ggplot2
 
 #### Configuration
-- Command prompt: make $HOME/bin
-- Download qq.R, cq.R to $HOME/bin
-- Command prompt: chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
+- At command prompt: make $HOME/bin
+- Move R scripts into $HOME/bin
+- At command prompt: chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
 - In $HOME/.bashrc: PATH=$PATH:$HOME/bin
-- Command prompt: source $HOME/.bashrc
+- At command prompt: source $HOME/.bashrc
 
 
 ## Quantitative versus Quantitative
