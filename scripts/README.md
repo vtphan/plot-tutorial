@@ -1,3 +1,8 @@
+## Installation
+- R
+- ggplot2
+
+## Scripts
 
 1. qq.R - simple script to plot quantitative-quantitative plots, i.e. scatter plots.
 
