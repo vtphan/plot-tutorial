@@ -1,3 +1,5 @@
+qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative vs quantiative and (2) categorical vs quantiative data.  These scripts facilitates quick analyses of data.  There is no customization of styles and aesthetics.
+
 ## Installation
 - R
 - ggplot2
