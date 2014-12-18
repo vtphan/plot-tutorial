@@ -1,16 +1,18 @@
 qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative vs quantiative and (2) categorical vs quantiative data.  These scripts facilitates quick analyses of data.  There is no customization of styles and aesthetics.
 
 ## Installation
+
+#### Dependencies
 - R
 - ggplot2
 
-Tips: Create, place qq.R, cq.R in $HOME/bin, and add it to your PATH in $HOME/.bashrc.
+#### Configuration
+- make $HOME/bin
+- Download qq.R, cq.R to $HOME/bin
+- chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
+- Set in your $HOME/.bashrc: PATH=$PATH:$HOME/bin
+- source $HOME/.bashrc
 
-Now you can use these scripts in any directory:
-```
-qq.R datafile x y [z]
-cq.R datafile x y [z]
-```
 
 ## Quantitative versus Quantitative
 
