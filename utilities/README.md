@@ -2,11 +2,11 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
 
 -  qq.R helps explore [quantitative vs quantiative relationships](#user-content-qq).
 ```
-     qq.R data.csv x y [z]
+     qq.R data.csv x y [c]
 ```
 -  qc.R helps explore [categorical vs quantiative relationships](#user-content-cq).
 ```
-     cq.R data.csv x y [z]
+     cq.R data.csv x y [c]
 ```
 -  density.R helps [compare distributions](#user-content-density).
 ```
@@ -37,9 +37,9 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 ```
 
 - data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : the name of column in data.csv representing the x-variable.
-- y : the name of column in data.csv representing the y-variable.
-- z : Optional. The name of column in data.csv representing the colorized grouping of data.
+- x : column name of quantitative variable x.
+- y : column name of quantitative variable y.
+- c : [Optional] column name of category to group data points.
 
 #### Examples
 ```
@@ -61,13 +61,13 @@ cq.R - plot categorical (x) versus quantitative (y) data.
 
 #### Usage
 ```
- cq.R data.csv x y [g]
+ cq.R data.csv x y [c]
 ```
 
 - data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : the name of column in data.csv representing the x-variable.
-- y : the name of column in data.csv representing the y-variable.
-- z : Optional. The name of column in data.csv, whose values partition (x,y) into different plots.
+- x : column name of categorical variable x.
+- y : column name of quantitative variable y.
+- c : [Optional] column name of category to partition data points.
 
 The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
@@ -99,8 +99,8 @@ Show the same plots for different values of "carb":
 ```
 
 - data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : the name of column in data.csv representing the x-variable.
-- c : Optional. the name of column in data.csv representing the category.
+- x : column name of quantitative variable/density.
+- c : Optional. column name of category to partition distribution data.
 
 #### Examples
 

@@ -9,7 +9,7 @@ args<-commandArgs(TRUE)
 # args[4] - z (optional)
 
 if (length(args) < 3 || length(args) > 4) {
-   cat("Usage:  Rscript qq.R data_file x y [z]\n")
+   cat("Usage:  Rscript qq.R data_file x y [c]\n")
 } else {
    sep <- "\t"
    if (file_ext(args[1]) == "csv") {
