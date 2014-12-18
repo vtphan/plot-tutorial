@@ -20,15 +20,17 @@ Usage:
 
 Example:
 ```
-  Rscript qq.R  ../examples/snp_caller.tsv Precision Recall Alg
-```
-<img src="images/precision-recall.png" width=70% height=70%/>
-
-Other examples:
-```
   Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length
-  Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length Sepal.Width
 ```
+<img src="images/iris-wl.png" width=70% height=70% />
+
+Categorized further by species.  In this case, two plots are produced: (i) groups are plotted together in one plot, (ii) groups are separated into different plots.
+
+```
+  Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length Species
+```
+<img src="images/iris-wl1.png" width=70% height=70% />
+<img src="images/iris-wl2.png" width=70% height=70% />
 
 2. cq.R - plot categorical (x) versus quantitative (y) data.
 
