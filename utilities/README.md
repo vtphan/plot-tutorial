@@ -27,7 +27,7 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
 - At command prompt: source $HOME/.bashrc
 
 
-## <a id="qq">Exploring Quantitative vs Quantitative Relationships]</a>
+## <a id="qq">Exploring Quantitative vs Quantitative Relationships</a>
 
 qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
