@@ -97,6 +97,7 @@ Looking at the distribution of sepal width from iris data:
 ```
 
 This produces 2 figures: histogram of absolute count and density.
+
 <img src="images/iris-densityA.png" width=70% height=70%/>
 <img src="images/iris-densityB.png" width=70% height=70%/>
 
@@ -106,6 +107,7 @@ Looking at the distribution categorized into different species.
 ```
 
 This produces 4 figures.
+
 <img src="images/iris-density1.png" width=70% height=70%/>
 <img src="images/iris-density2.png" width=70% height=70%/>
 <img src="images/iris-density3.png" width=70% height=70%/>
