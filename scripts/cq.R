@@ -1,3 +1,5 @@
+#!/usr/local/bin/Rscript
+
 data_summary <- function(x) {
    return(c(y=mean(x),ymin=min(x),ymax=max(x)))
 }

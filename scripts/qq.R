@@ -1,3 +1,5 @@
+#!/usr/local/bin/Rscript
+
 library(ggplot2)
 library(tools)
 args<-commandArgs(TRUE)
