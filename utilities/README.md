@@ -1,4 +1,17 @@
-qq.R, cq.R and density.R help facilitate quick analyses of data.  They provide plots for (1) quantitative vs quantiative , (2) categorical vs quantiative data, and (3) comparing distributions.
+qq.R, cq.R and density.R help facilitate quick analyses of data.
+
+1.  qq.R helps explore quantitative vs quantiative relationships.
+```
+     qq.R data.csv x y [z]
+```
+2.  qc.R helps explore categorical vs quantiative relationships.
+```
+     cq.R data.csv x y [z]
+```
+3.  density.R helps compare distributions.
+```
+     density.R data.csv x [c]
+```
 
 ## Installation
 
