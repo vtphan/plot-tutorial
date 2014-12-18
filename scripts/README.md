@@ -8,7 +8,7 @@ qq.R and cq.R are two separate R scripts that provide plots for (1) quantitative
 
 qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
-Usage:
+#### Usage
 ```
  Rscript qq.R data_file x y [z]
 ```
@@ -18,7 +18,7 @@ Usage:
 - y : the name of column in data_file representing the y-variable.
 - z : Optional. The name of column in data_file representing the colorized grouping of data.
 
-Example:
+#### Examples
 ```
   Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length
 ```
@@ -36,7 +36,7 @@ Categorized further by species.  In this case, two plots are produced: (i) group
 
 cq.R - plot categorical (x) versus quantitative (y) data.
 
-Usage:
+#### Usage
 ```
  Rscript cq.R data_file x y [g]
 ```
@@ -48,7 +48,7 @@ Usage:
 
 The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
-Examples:
+#### Examples
 ```
  Rscript cq.R ../examples/mtcars.csv cyl disp
 ```
