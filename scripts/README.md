@@ -3,7 +3,7 @@
 
 Usage:
 ```
-Rscript qq.R data_file x y z
+Rscript qq.R data_file x y [z]
 ```
 
 - data_file : comma-separated or tab-separated file, with a header and column names.  The data must be in long-form.
