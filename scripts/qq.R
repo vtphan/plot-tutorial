@@ -20,6 +20,6 @@ if (length(args) < 3 || length(args) > 4) {
    } else {
       ggplot(data, aes(x=data[,args[2]], y=data[,args[3]], color=data[,args[4]])) + geom_point() + xlab(args[2]) + ylab(args[3]) + labs(color=args[4])
    }
-   print("Saving to output.png")
    ggsave("output.png")
+   print("Output saved to output.png")
 }
