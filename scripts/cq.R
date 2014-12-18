@@ -8,10 +8,10 @@ args<-commandArgs(TRUE)
 # args[1] - data file
 # args[2] - x
 # args[3] - y
-# args[4] - color (optional)
+# args[4] - z (optional)
 
 if (length(args) < 3 || length(args) > 4) {
-   print("Usage:  Rscript qq.R data_file x y [c]")
+   print("Usage:  Rscript qq.R data_file x y [z]")
 } else {
    sep <- "\t"
    if (file_ext(args[1]) == "csv") {

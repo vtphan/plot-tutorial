@@ -8,13 +8,13 @@
 
 Usage:
 ```
- Rscript qq.R data_file x y [c]
+ Rscript qq.R data_file x y [z]
 ```
 
 - data_file : comma-separated or tab-separated file, with a header and column names.  The data must be in long-form.
 - x : the name of column in data_file representing the x-variable.
 - y : the name of column in data_file representing the y-variable.
-- c : Optional. The name of column in data_file representing the colorized grouping of data.
+- z : Optional. The name of column in data_file representing the colorized grouping of data.
 
 Example:
 ```
@@ -38,7 +38,7 @@ Usage:
 - data_file : comma-separated or tab-separated file, with a header and column names.  The data must be in long-form.
 - x : the name of column in data_file representing the x-variable.
 - y : the name of column in data_file representing the y-variable.
-- g : Optional. The name of column in data_file spreaded into different groups (plots).
+- z : Optional. The name of column in data_file, whose values partition (x,y) into different plots.
 
 Examples:
 ```
