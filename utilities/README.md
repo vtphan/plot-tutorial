@@ -13,7 +13,7 @@ qq.R, cq.R and density.R help facilitate quick analyses of data.
      density.R data.csv x [c]
 ```
 
-+ #### Installation and Configurations
+#### [Installation and Configurations](Installation.md)
 
 ## Installation
 
