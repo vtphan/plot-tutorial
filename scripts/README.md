@@ -20,13 +20,13 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 #### Usage
 ```
- qq.R data_file x y [z]
+ qq.R data.csv x y [z]
 ```
 
-- data_file : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : the name of column in data_file representing the x-variable.
-- y : the name of column in data_file representing the y-variable.
-- z : Optional. The name of column in data_file representing the colorized grouping of data.
+- data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
+- x : the name of column in data.csv representing the x-variable.
+- y : the name of column in data.csv representing the y-variable.
+- z : Optional. The name of column in data.csv representing the colorized grouping of data.
 
 #### Examples
 ```
@@ -48,13 +48,13 @@ cq.R - plot categorical (x) versus quantitative (y) data.
 
 #### Usage
 ```
- cq.R data_file x y [g]
+ cq.R data.csv x y [g]
 ```
 
-- data_file : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
-- x : the name of column in data_file representing the x-variable.
-- y : the name of column in data_file representing the y-variable.
-- z : Optional. The name of column in data_file, whose values partition (x,y) into different plots.
+- data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
+- x : the name of column in data.csv representing the x-variable.
+- y : the name of column in data.csv representing the y-variable.
+- z : Optional. The name of column in data.csv, whose values partition (x,y) into different plots.
 
 The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
