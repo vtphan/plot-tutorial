@@ -1,4 +1,4 @@
-# <a name="qq"></a>Exploring Quantitative vs Quantitative Relationships
+## <a name="qq"></a>Exploring Quantitative vs Quantitative Relationships
 
 qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 

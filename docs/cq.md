@@ -1,5 +1,4 @@
-
-# <a name="cq"></a> Exploring categorical versus quantitative relationships
+## <a name="cq"></a> Exploring categorical versus quantitative relationships
 
 cq.R - plot categorical (x) versus quantitative (y) data.
 

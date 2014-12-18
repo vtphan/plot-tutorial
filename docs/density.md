@@ -1,5 +1,5 @@
 
-# <a name="density"> Comparing densities and distributions
+## <a name="density"> Comparing densities and distributions
 
 #### Usage
 ```
