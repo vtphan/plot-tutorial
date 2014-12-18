@@ -28,7 +28,7 @@ Other examples:
   Rscript qq.R ../examples/iris.csv Petal.Width Petal.Length Sepal.Width
 ```
 
-2. cq.R - plot categorical (x) versus quantitative (y) data.  The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
+2. cq.R - plot categorical (x) versus quantitative (y) data.
 
 Usage:
 ```
@@ -39,6 +39,8 @@ Usage:
 - x : the name of column in data_file representing the x-variable.
 - y : the name of column in data_file representing the y-variable.
 - z : Optional. The name of column in data_file, whose values partition (x,y) into different plots.
+
+The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
 Examples:
 ```
