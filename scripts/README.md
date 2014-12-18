@@ -49,7 +49,7 @@ cq.R - plot categorical (x) versus quantitative (y) data.
  Rscript cq.R data_file x y [g]
 ```
 
-- data_file : comma-separated or tab-separated file, with a header and column names.  The data must be in long-form.
+- data_file : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
 - x : the name of column in data_file representing the x-variable.
 - y : the name of column in data_file representing the y-variable.
 - z : Optional. The name of column in data_file, whose values partition (x,y) into different plots.
