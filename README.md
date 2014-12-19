@@ -8,14 +8,6 @@ This tutorial provides basic examples of how to do basic data analysis using R/g
 - ggplot2
 - reshape2 (recommended)
 
-## Basic concepts
-
-Each data set should be stored in columns separated by tabs or commas.  There should be a header, providing the name of each column.
-
-Essentially, there are two types of data: quantitative and qualitative.  Quantitative are numerical data and qualitative data are categorical.
-
-A basic plot consists of two dimensions: x and y.  Typically, x describes a free or independent variable, whereas y is a dependent variable (which depends on x).  y can be a function of x, or is simply correlated to x in some unknown way.
-
 ## Starting up
 
 Start by running the R interpreter at the command line:
@@ -59,9 +51,9 @@ We can separate the points into groups defined by variable "Species".
 
 <img src="examples/out2.png" width=70% height=70%/>
 
-## Plot qualitative versus quantitative data
+## Plot categorical versus quantitative data
 
-Compare 5-point statistics of Petal.Width (quantitative variable, y-axis) across Species (qualitative variable, x-axis).
+Compare 5-point statistics of Petal.Width (quantitative variable, y-axis) across Species (categorical variable, x-axis).
 
 ```
 > ggplot(data, aes(x=Species, y=Petal.Width)) + geom_boxplot()
@@ -81,7 +73,7 @@ These two variables are quantitative.  First, look at the scatter plot.
 
 Many points overlap, and hence, this is not very useful.
 
-It is more informative to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as qualitative/categorical data. (In other words, 4, 6, 8 are categories of cylinders not numerical/quantitative values.)
+It is more informative to look at the 5-point statistics of mpg across different cylinders. It is best to view the variable "cyl" as categorical/categorical data. (In other words, 4, 6, 8 are categories of cylinders not numerical/quantitative values.)
 ```
 > ggplot(mtcars, aes(x=factor(cyl), y=mpg)) + geom_bar(stat="identity")
 ```
