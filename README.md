@@ -1,4 +1,4 @@
-# ggplot very basic tutorial
+# Basic data analysis and visualization
 
 This tutorial shows how to do basic data analysis using R/ggplot2.  If you want to use already-created tools for quick data analyses, go [here](utilities).
 
