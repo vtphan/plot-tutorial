@@ -16,12 +16,19 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 ```
   qq.R iris.csv Petal.Width Petal.Length
 ```
-<img src="images/iris-wl.png" width=70% height=70% />
 
-Categorized further by species.  In this case, two plots are produced: (i) groups are plotted together in one plot, (ii) groups are separated into different plots.
+The output consists of 3 plots, with and without data fitting.
+
+<img src="images/iris-wl1.png" width=70% height=70% />
+<img src="images/iris-wl2.png" width=70% height=70% />
+<img src="images/iris-wl3.png" width=70% height=70% />
+
+Categorized further by species.
 
 ```
   qq.R iris.csv Petal.Width Petal.Length Species
 ```
-<img src="images/iris-wl1.png" width=70% height=70% />
-<img src="images/iris-wl2.png" width=70% height=70% />
+
+<img src="images/iris-c1.png" width=70% height=70% />
+<img src="images/iris-c2.png" width=70% height=70% />
+<img src="images/iris-c3.png" width=70% height=70% />
