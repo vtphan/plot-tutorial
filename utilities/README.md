@@ -1,4 +1,4 @@
-qq.R, cq.R and density.R help facilitate quick analyses of data.
+These scripts, qq.R, cq.R and density.R, are designed to help ploting well-formated data quickly.
 
 -  qq.R helps explore quantitative vs quantiative relationships.
 ```
