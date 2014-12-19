@@ -1,12 +1,6 @@
 # ggplot very basic tutorial
 
-This tutorial provides basic examples of how to do basic data analysis using R/ggplot2.
-
-## Installation
-
-- R
-- ggplot2
-- reshape2 (recommended)
+This tutorial shows how to do basic data analysis using R/ggplot2.  If you want to use already-created tools for quick data analyses, go [here](utilities)
 
 ## Starting up
 
