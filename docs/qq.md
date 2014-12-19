@@ -14,14 +14,14 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 #### Examples
 ```
-  qq.R ../examples/iris.csv Petal.Width Petal.Length
+  qq.R iris.csv Petal.Width Petal.Length
 ```
 <img src="images/iris-wl.png" width=70% height=70% />
 
 Categorized further by species.  In this case, two plots are produced: (i) groups are plotted together in one plot, (ii) groups are separated into different plots.
 
 ```
-  qq.R ../examples/iris.csv Petal.Width Petal.Length Species
+  qq.R iris.csv Petal.Width Petal.Length Species
 ```
 <img src="images/iris-wl1.png" width=70% height=70% />
 <img src="images/iris-wl2.png" width=70% height=70% />

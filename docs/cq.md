@@ -16,7 +16,7 @@ The output consists of 3 plots: (i) a bar chart that sums up quantitative values
 
 #### Examples
 ```
- cq.R ../examples/mtcars.csv cyl disp
+ cq.R mtcars.csv cyl disp
 ```
 <img src="images/cyl-disp1.png" width=70% height=70%/>
 <img src="images/cyl-disp2.png" width=70% height=70%/>
@@ -25,7 +25,7 @@ The output consists of 3 plots: (i) a bar chart that sums up quantitative values
 
 Show the same plots for different values of "carb":
 ```
- cq.R ../examples/mtcars.csv cyl disp carb
+ cq.R mtcars.csv cyl disp carb
 ```
 
 <img src="images/cyl-disp-carb1.png" width=70% height=70%/>

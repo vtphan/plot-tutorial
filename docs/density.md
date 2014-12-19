@@ -14,7 +14,7 @@
 
 Looking at the distribution of sepal width from iris data:
 ```
- density.R ../examples/iris.csv Sepal.Width
+ density.R iris.csv Sepal.Width
 ```
 
 This produces 2 figures: histogram of absolute count and density.
@@ -24,7 +24,7 @@ This produces 2 figures: histogram of absolute count and density.
 
 Looking at the distribution categorized into different species.
 ```
- density.R ../examples/iris.csv Sepal.Width Species
+ density.R iris.csv Sepal.Width Species
 ```
 
 This produces 4 figures.
