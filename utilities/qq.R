@@ -1,17 +1,13 @@
 #!/usr/local/bin/Rscript
 
+options(warn=-1)
 library(ggplot2)
 library(tools)
 args<-commandArgs(TRUE)
-# args[1] - data file
-# args[2] - x
-# args[3] - y
-# args[4] - z (optional)
 
 if (length(args) < 3 || length(args) > 4) {
    cat("\tUsage:  Rscript qq.R data_file x y [c]\n")
 } else {
-   options(warn=-1)
    sep <- "\t"
    if (file_ext(args[1]) == "csv") {
       sep <- ","
