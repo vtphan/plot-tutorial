@@ -1,4 +1,4 @@
-These scripts are designed to help ploting well-formated data quickly.
+These scripts are designed to help ploting and analyzing well-formated data quickly.
 
 -  qq.R helps explore quantitative vs quantiative relationships.
 ```
