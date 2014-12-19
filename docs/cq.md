@@ -10,7 +10,7 @@ cq.R - plot categorical (x) versus quantitative (y) data.
 - data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
 - x : column name of categorical variable x.
 - y : column name of quantitative variable y.
-- c : [Optional] column name of category to partition data points.
+- c : Optional category variable, which should consist of few categorical values.
 
 The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 

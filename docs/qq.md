@@ -4,13 +4,13 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 
 #### Usage
 ```
- qq.R data.csv x y [z]
+ qq.R data.csv x y [c]
 ```
 
 - data.csv : comma-separated file (.csv) or tab-separated file (.tsv).  There must be a header containing column names.  The data must be in long-form.
 - x : column name of quantitative variable x.
 - y : column name of quantitative variable y.
-- c : [Optional] column name of category to group data points.
+- c : Optional category variable, which should consist of few categorical values.
 
 #### Examples
 ```
