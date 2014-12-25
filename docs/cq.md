@@ -14,7 +14,7 @@ cq.R - plot categorical (x) versus quantitative (y) data.
 
 The output consists of 3 plots: (i) a bar chart that sums up quantitative values for each category, (ii) a box plot that shows quartile statistics of each category, and (iii) a violin plot that shows distributions of values in each category.
 
-#### Examples
+#### Basic use: plotting x versus y
 ```
  cq.R mtcars.csv cyl disp
 ```
@@ -23,7 +23,8 @@ The output consists of 3 plots: (i) a bar chart that sums up quantitative values
 <img src="images/cyl-disp3.png" width=70% height=70%/>
 
 
-Show the same plots for different values of "carb":
+#### Adding a third categorical dimension
+
 ```
  cq.R mtcars.csv cyl disp carb
 ```
