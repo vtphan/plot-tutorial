@@ -1,5 +1,7 @@
 # Installation
 
+This installation is for a Unix/Linux/OS X environment.
+
 ### Dependencies
 - R
 - ggplot2
@@ -7,6 +9,8 @@
 ### Script installation
 - Download [install script](install.sh)
 - From command prompt, run "bash install.sh"
+
+The R scripts will be installed in $HOME/bin, which will be added to your PATH.
 
 ### Manual installation and configuration
 - At command prompt: make $HOME/bin
