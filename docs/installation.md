@@ -4,7 +4,11 @@
 - R
 - ggplot2
 
-### Configuration
+### Script installation
+- Download [install script](install.sh)
+- From command prompt, run "bash install.sh"
+
+### Manual installation and configuration
 - At command prompt: make $HOME/bin
 - Move R scripts into $HOME/bin
 - At command prompt: chmod u+x $HOME/bin/qq.R; chmod u+x $HOME/bin/cq.R
