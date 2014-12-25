@@ -12,7 +12,7 @@ qq.R - plot quantitative (x) versus quantitative (y) data, i.e. scatter plots.
 - y : column name of quantitative variable y.
 - c : Optional category variable, which should consist of few categorical values.
 
-#### Examples
+#### Basic use: plotting x versus y
 ```
   qq.R iris.csv Petal.Width Petal.Length
 ```
@@ -23,7 +23,8 @@ The output consists of 3 plots, with and without data fitting.
 <img src="images/iris-wl2.png" width=70% height=70% />
 <img src="images/iris-wl3.png" width=70% height=70% />
 
-Categorized further by species.
+
+#### Adding a third categorical dimension
 
 ```
   qq.R iris.csv Petal.Width Petal.Length Species
