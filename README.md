@@ -1,6 +1,10 @@
+
 # Basic data analysis and visualization
 
-This tutorial shows how to do basic data analysis using [ggplot2](http://ggplot2.org), a popular module of [the R language](http://www.r-project.org).  If you want to use already-created tools for quick data analyses, go [here](utilities).
+[Check this out](utilities) if you want scripts that can *quickly* turn data into figures without disrupting the thinking process.
+
+This tutorial shows how to do basic data analysis using [ggplot2](http://ggplot2.org), a popular module of [the R language](http://www.r-project.org).
+
 
 ## Starting up
 
