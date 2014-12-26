@@ -7,7 +7,7 @@ This installation is for a Unix/Linux/OS X environment.
 - ggplot2
 
 ### Script installation
-- Download [install script](install.sh)
+- Download [install script](https://github.com/vtphan/plot-tutorial/raw/master/docs/install.sh)
 - From command prompt, run "bash install.sh"
 
 The R scripts will be installed in $HOME/bin, which will be added to your PATH.
