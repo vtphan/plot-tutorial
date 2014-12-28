@@ -4,7 +4,7 @@ data_summary <- function(x) {
    return(c(y=mean(x),ymin=min(x),ymax=max(x)))
 }
 
-QQ <- function(data, args) {
+QQ <- function() {
    if (length(args) == 3) {
       ggplot(data, aes(x=eval(parse(text=args[2])), y=eval(parse(text=args[3])))) + geom_point() + xlab(args[2]) + ylab(args[3])
       ggsave("output1.png", width=7, height=7)
@@ -21,37 +21,30 @@ QQ <- function(data, args) {
       cat("\tLinear-fitted plot saved to output2.png\n")
    }
    if (length(levels(factor(data[,args[2]]))) <= 30) {
-      CQ(data, args, "output3.png", "output4.png", "output5.png")
+      CQ("output3.png", "output4.png")
    }
 }
 
-CQ <- function(data, args, out1="output1.png", out2="output2.png", out3="output3.png") {
+CQ <- function(out1="output1.png", out2="output2.png") {
    if (length(args) >= 3) {
-      p <- ggplot(data, aes(x=factor(eval(parse(text=args[2]))), y=eval(parse(text=args[3])))) + geom_bar(stat="identity")  + xlab(args[2]) + ylab(args[3])
-      if (length(args)==4) {
-         p <- p + facet_wrap(eval(parse(text=paste("~",args[4]))))
-      }
-      p
-      ggsave(out1, width=7, height=7)
-      cat("\tBarplot saved to", out1, "\n")
       p <- ggplot(data, aes(x=factor(eval(parse(text=args[2]))), y=eval(parse(text=args[3])))) + geom_boxplot() + xlab(args[2]) + ylab(args[3])
       if (length(args)==4) {
          p <- p + facet_wrap(eval(parse(text=paste("~",args[4]))))
       }
       p
-      ggsave(out2, width=7, height=7)
-      cat("\tBoxplot saved to", out2, "\n")
+      ggsave(out1, width=7, height=7)
+      cat("\tBoxplot saved to", out1, "\n")
       p <- ggplot(data, aes(x=factor(eval(parse(text=args[2]))), y=eval(parse(text=args[3])))) + geom_violin(trim=FALSE) +  stat_summary(fun.y=data_summary, fun.ymin=min, fun.ymax=max) + xlab(args[2]) + ylab(args[3])
       if (length(args)==4) {
          p <- p + facet_wrap(eval(parse(text=paste("~",args[4]))))
       }
       p
-      ggsave(out3, width=7, height=7)
-      cat("\tViolinplot saved to", out3, "\n")
+      ggsave(out2, width=7, height=7)
+      cat("\tViolinplot saved to", out2, "\n")
    }
 }
 
-DENSITY <- function(data, args) {
+DENSITY <- function() {
    if (length(args)==2) {
       ggplot(data, aes(x=eval(parse(text=args[2])))) + xlab(args[2]) + geom_histogram(fill="cornsilk", color="grey60")
       ggsave("output1.png", width=7, height=7)
@@ -64,7 +57,7 @@ DENSITY <- function(data, args) {
       ggsave("output1.png", width=10, height=6)
       cat("\tHistogram (absolute count) saved to output1.png\n")
 
-      ggplot(data, aes(x=Sepal.Width, y=..density..)) + xlab("Sepal.Width") + geom_histogram(fill="cornsilk", color="grey60") + geom_density() + facet_grid(eval(parse(text=paste(args[3],"~."))))
+      ggplot(data, aes(x=eval(parse(text=args[2])), y=..density..)) + xlab(args[2]) + geom_histogram(fill="cornsilk", color="grey60") + geom_density() + facet_grid(eval(parse(text=paste(args[3],"~."))))
       ggsave("output2.png", width=6, height=10)
       cat("\tHistogram (density) saved to output2.png\n")
 
@@ -99,13 +92,13 @@ if (length(args) < 2 || length(args) > 4) {
       caty <- tail(class(data[,args[3]]), n=1)
       cat(catx, caty, "\n")
       if ((catx %in% c("numeric","integer")) && (caty %in% c("numeric", "integer"))) {
-         QQ(data, args)
+         QQ()
       } else if (!(catx %in% c("numeric","integer")) && (caty %in% c("numeric", "integer"))) {
-         CQ(data, args)
+         CQ()
       } else if ((catx %in% c("numeric","integer")) && !(caty %in% c("numeric", "integer"))) {
-         DENSITY(data, args)
+         DENSITY()
       }
    } else {
-      DENSITY(data, args)
+      DENSITY()
    }
 }
